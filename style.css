@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFDEC;
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body take the full height of the viewport */
+}
+
+.box {
+    height: 70vh;
+    width: 70vh;
+    background-color: #86A788;
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center;
+    position: relative; /* Enables precise positioning inside the box */
+    padding-top: 20px; /* Add space at the top */
+    border-radius: 10px; /* Optional: Rounded corners for the box */
+}
+
+.innerbox {
+    width: 90%; /* Make the innerbox take most of the box width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the search bar to the top-left */
+    /* border: 1px solid black; */
+    gap: 10px;
+    background: #86A788;
+    height: 90%;
+}
+
+.searchbar {
+    width: 100%; /* Ensure the search bar spans the width of the container */
+    display: flex;
+    background-color: #86A788;
+    justify-content: center;
+}
+
+.search {
+    /* width: 70%; Adjust width of the input */
+    padding: 5px; /* Adjust padding for better appearance */
+    font-size: 16px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+}
+
+button {
+    padding: 5px 10px; /* Adjust padding for better appearance */
+    font-size: 16px;
+    cursor: pointer;
+    border-left: 2px solid #86A788;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+button:hover{
+    background-color: #86A788;
+    color: #fff;
+}
+.itembox{
+    width: 100%;
+    margin-top: 10px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* border: 1px solid red; */
+    background: #86A788;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #86A788 #FFFDEC;
+}
+.item {
+    background-color: #FFFDEC; /* Fixed the missing # for color code */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 5px; /* Add padding for better appearance */
+    width: 90%; /* Adjust width of the item */
+    box-sizing: border-box;
+}
+.itemimg{
+    width: 7rem;
+}
+.itemdetail{
+    height: 100%;
+}
